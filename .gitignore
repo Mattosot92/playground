@@ -1,3 +1,35 @@
 backend/target/
 frontend/node_modules/
 frontend/dist/
+
+# Exclude legacy standalone frontend (now embedded in backend)
+frontend/
+
+# Java/Maven
+**/target/
+
+# Node.js
+**/node_modules/
+**/dist/
+
+# Frontend Maven Plugin local Node install
+backend/src/main/frontend/node/
+
+# IDE folders/files
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
